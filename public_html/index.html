@@ -4,318 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aperture Vision</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'
-        rel='stylesheet' type='text/css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <title>Authentication & Security Wiki</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-
-    </style>
-</head>
-
-<body>
-
-    <!-- Navigation with transparency effect -->
-    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
-        <div class="container">
-            <!-- Brand -->
-            <a class="navbar-brand d-flex align-items-center" href="/login">
-                <img src="icon.jpg" alt="A designer icon, depicting a camera on a dark background"
-                    class="img-fluid rounded-circle">
-                <span class="ms-2">Aperture Vision</span>
-            </a>
-            <!-- Navbar Links -->
-            <div class="collapse navbar-collapse ms-auto" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="btn btn-outline-light me-2" href="index.html">Home</a>
-                    </li>
-                    <!-- Dropdown for Services -->
-                    <li class="nav-item dropdown">
-                        <a class="btn btn-outline-light dropdown-toggle me-2" href="#" id="servicesDropdown"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Services
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                            <li><a class="dropdown-item" href="services.html#wedding">Wedding Photography</a></li>
-                            <li><a class="dropdown-item" href="services.html#street">Street Photography</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-outline-light me-2" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-outline-light" href="contact.html">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Image carousel mostly repurposed from earlier Bootstrap task and modified to fit to save time-->
-    <div id="imagecar" class="carousel carousel-fade">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#imagecar" data-bs-slide-to="0" class="active" aria-current="true"
-                aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#imagecar" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#imagecar" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner" data-bs-ride="carousel">
-            <div class="carousel-item active">
-                <img src="herocar1.jpg" class="d-block img-fluid" alt="Library 1">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Wels Gurden</h5>
-                    <p></p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="herocar2.jpg" class="d-block img-fluid" alt="Library 2">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Norvenall</h5>
-                    <p></p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="herocar3.jpg" class="d-block img-fluid" alt="Library 3">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Havgrskall</h5>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#imagecar" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#imagecar" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    <!-- Hero Section -->
-    <div class="hero4">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Welcome to Aperture Vision Solutions</h1>
-            <p>Capturing Life's Moments, Framed and In Motion.</p>
-        </div>
-    </div>
-
-    <!-- Cards Section -->
-    <!-- href the cards to respective pages using the card-link class -->
-    <!-- adjust image parameters using custom prban class-->
-    <section class="container-fluid mx-auto promo">
-        <div class="row d-flex justify-content-end" style="position: absolute; bottom: 0; width: 100%;">
-            <section class="container promo mt-5">
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <a href="weddings.html" class="card-link text-decoration-none">
-                            <div class="card shadow-lg">
-                                <img src="card1.jpg" alt="Wedding photography" class="card-img-top img-fluid">
-                                <div class="card-body">
-                                    <h5 class="card-title">Weddings</h5>
-                                    <p class="card-text">One moment, a million memories.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="landscape.html" class="card-link text-decoration-none">
-                            <div class="card shadow-lg">
-                                <img src="card2.jpg" alt="Landscape photography" class="card-img-top img-fluid">
-                                <div class="card-body">
-                                    <h5 class="card-title">Landscape</h5>
-                                    <p class="card-text">Going beyond your own feet.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="portraits.html" class="card-link text-decoration-none">
-                            <div class="card shadow-lg">
-                                <img src="card3.jpg" alt="Portrait photography" class="card-img-top img-fluid">
-                                <div class="card-body">
-                                    <h5 class="card-title">Portraits</h5>
-                                    <p class="card-text">Capture the person, feel the story.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-        </div>
-    </section>
-
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4 mt-5">
-        <div>
-            &copy; 2024 Aperture Vision Solutions. All Rights Reserved.
-        </div>
-        <div class="mt-2">
-            <button onclick="readLastTime()" class="btn btn-sm btn-light">Last updated</button>
-            <span id="timeUpdate"></span>
-        </div>
-        <div class="mt-2">
-            <a href="mailto:info@aperturevision.com" class="text-white text-decoration-none">
-                info@aperturevision.com
-            </a>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="form.js"></script>
-</body>
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-COMBINED SOURCE CODE OF /VEIWS/xxx.ejs files
-
-
-
-login.ejs
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Login</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/gallery.css">
-    <style>
-        /* Center Login Form */
-        .login-container {
-            width: 100%;
-            max-width: 400px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+        }
+        .section {
+            margin-bottom: 20px;
         }
     </style>
 </head>
-<body>
-    <div class="login-container container">
-        <h2 class="text-center">Login</h2>
-        <form action="/login" method="POST">
-            <div class="mb-3">
-                <label class="form-label">Username</label>
-                <input type="text" class="form-control" name="username" required>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Password</label>
-                <input type="password" class="form-control" name="password" required>
-            </div>
-            <button type="submit" class="btn">Login</button>
-            <a href="/" class="btn mt-2">Return to Home</a>
-        </form>
-    </div>
 
-</body>
-</html>
-
-gallery.ejs
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Gallery</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/gallery.css">
-</head>
 <body>
-    <nav class="navbar">
-        <a href="/logout" class="btn">Logout</a>
-        <a href="/form" class="btn">Add Image</a>
-    </nav>
-    <h2 class="text-center mt-4">Gallery</h2>
-    <div class="search-container">
-        <form method="GET" action="/gallery" class="d-flex">
-            
-            <select name="tag" class="form-select me-2">
-                <option value="">Select Tag (All)</option>
-                <option value="Portrait">Portrait</option>
-                <option value="Landscape">Landscape</option>
-                <option value="Urban">Urban</option>
-                <option value="Nature">Nature</option>
-                <option value="Abstract">Abstract</option>
-                <option value="Black & White">Black & White</option>
-            </select>
-            <button type="submit" class="btn">Search</button>
-        </form>
-    </div>
     <div class="container">
-        <div class="row">
-            <% images.forEach(image => { %>
-                <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
-                    <div class="card shadow-sm">
-                        <div class="card-img-container">
-                        <img src="<%= image.image_url %>" class="card-img-top">
-                        <div class="card-body">
-                            <h6><%= image.name %></h6>
-                            <p class="text-muted"><%= image.tags %></p>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            <% }) %>
+        <h1 class="text-center">Authentication & Security Overview</h1>
+        
+        <div class="section">
+            <h2>Bcrypt for Password Hashing & Salting</h2>
+            <p>To ensure user password security, we utilize <strong>bcrypt</strong> for password hashing and salting. Bcrypt generates a cryptographic hash that mitigates brute-force attacks and password cracking.</p>
+            <pre><code>
+const bcrypt = require('bcrypt');
+const saltRounds = 10;
+
+// Hashing a password before saving
+bcrypt.hash(password, saltRounds, (err, hash) => {
+    if (err) throw err;
+    console.log("Hashed Password:", hash);
+});
+
+// Comparing user-entered password with stored hash
+bcrypt.compare(userInputPassword, storedHash, (err, result) => {
+    if (result) {
+        console.log("Password Match");
+    } else {
+        console.log("Incorrect Password");
+    }
+});
+            </code></pre>
+        </div>
+        
+        <div class="section">
+            <h2>Password Strength Validation</h2>
+            <p>We use a JavaScript function (<strong>pwd_validator.js</strong>) to evaluate password strength in real-time based on length, uppercase letters, numbers, and symbols.</p>
+            <pre><code>
+function evaluatePasswordStrength(password) {
+    let strength = 0;
+    if (password.length > 10) strength++;
+    if (/[A-Z]/.test(password)) strength++;
+    if (/\d/.test(password)) strength++;
+    if (/[^A-Za-z0-9]/.test(password)) strength++;
+    return strength;
+}
+            </code></pre>
+        </div>
+
+        <div class="section">
+            <h2>Image Gallery Feature</h2>
+            <p>Users can upload and categorize images using the gallery system. The uploaded images are stored in the MySQL database and can be searched based on tags.</p>
+            <ul>
+                <li><strong>form.ejs</strong>: Allows users to upload new images.</li>
+                <li><strong>gallery.ejs</strong>: Displays uploaded images in a responsive format.</li>
+                <li><strong>MySQL database</strong>: Stores image metadata (name, tags, URLs).</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Redirecting to Login</h2>
+            <p>Click below to proceed to the login page:</p>
+            <a href="/login" class="btn btn-primary">Go to Login</a>
         </div>
     </div>
 </body>
 </html>
-
-form.ejs
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Add New Image</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/gallery.css">
-</head>
-<body>
-
-    <nav class="navbar">
-        <a href="/gallery" class="btn">Back to Gallery</a>
-        <a href="/logout" class="btn">Logout</a>
-    </nav>
-
-    <div class="container">
-        <h2 class="text-center">Add New Image</h2>
-        <form action="/add-image" method="POST">
-            <div class="mb-3">
-                <label class="form-label">Image Name</label>
-                <input type="text" class="form-control" name="name" required>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Tags (comma-separated)</label>
-                <input type="text" class="form-control" name="tags" required>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Image URL</label>
-                <input type="text" class="form-control" name="image_url" required>
-            </div>
-            <button type="submit" class="btn">Add Image</button>
-        </form>
-    </div>
-
-</body>
-</html>
--->
