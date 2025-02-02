@@ -1,0 +1,121 @@
+       /* Additional styling sheet */
+        body {
+            background: #121212;
+            color: #e0e0e0;
+            font-family: 'Garamond', serif;
+        }
+        .navbar {
+            background: #1c1c1c;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar .btn {
+            background: #b30000;
+            color: #fff;
+            border: none;
+            transition: 0.3s;
+        }
+        .navbar .btn:hover {
+            background: #880000;
+        }
+        .container {
+            min-width: 500px;
+            max-width: 80%;
+            margin-top: 50px;
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px #b30000;
+        }
+        .form-control, .btn {
+            background: #252525;
+            color: #e0e0e0;
+            border: 1px solid #b30000;
+        }
+        .form-control::placeholder {
+            color: #888;
+        }
+        .btn {
+            width: 100%;
+        }
+        .btn:hover {
+            background: #b30000;
+            color: #fff;
+        }
+
+        .search-container {
+            margin: 20px auto;
+            max-width: 500px;
+            text-align: center;
+        }
+        .form-control, .btn, .form-select {
+            background: #252525;
+            color: #e0e0e0;
+            border: 1px solid #b30000;
+        }
+        .form-control::placeholder {
+            color: #888;
+        }
+        .card:hover {
+            box-shadow: 0px 0px 15px #b30000;
+        }
+        
+
+                /* Ensure consistent card layout */
+        .card {
+            background: #1e1e1e;
+            border: 1px solid #333;
+            color: #e0e0e0;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+
+        /* Image wrapper to enforce aspect ratio */
+        .card-img-container {
+            width: 100%;
+            aspect-ratio: 4 / 3; /* Enforce 4:3 aspect ratio */
+            overflow: hidden;
+        }
+
+        /* Ensure image fills container */
+        .card-img-top {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Crop image to fit within aspect ratio */
+        }
+
+        /* Card body */
+        .card-body {
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .card-img-container {
+                aspect-ratio: 1 / 1; /* Adjust to 1:1 for smaller screens */
+            }
+        }
+
+
+        .strength-meter {
+            width: 100%;
+            height: 10px;
+            background: #ddd;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .strength-bar {
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s, background-color 0.3s;
+        }
+
+        

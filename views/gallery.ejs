@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/gallery.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="/logout" class="btn">Logout</a>
+        <a href="/form" class="btn">Add Image</a>
+    </nav>
+
+    <!-- Title -->
+    <h2 class="text-center mt-4">Gallery</h2>
+
+    <!-- Search Form -->
+    <div class="search-container">
+        <form method="GET" action="/gallery" class="d-flex">
+            
+            <select name="tag" class="form-select me-2">
+                <option value="">Select Tag (All)</option>
+                <option value="Portrait">Portrait</option>
+                <option value="Landscape">Landscape</option>
+                <option value="Urban">Urban</option>
+                <option value="Nature">Nature</option>
+                <option value="Abstract">Abstract</option>
+                <option value="Black & White">Black & White</option>
+            </select>
+            <button type="submit" class="btn">Search</button>
+        </form>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="container">
+        <div class="row">
+            <% images.forEach(image => { %>
+                <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-img-container">
+                        <img src="<%= image.image_url %>" class="card-img-top">
+                        <div class="card-body">
+                            <h6><%= image.name %></h6>
+                            <p class="text-muted"><%= image.tags %></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+
+</body>
+</html>
